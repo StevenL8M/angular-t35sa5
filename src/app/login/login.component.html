@@ -5,8 +5,8 @@
 </div>
  
   <div class="input-group" id="zoneLogin">
-    <form #userForm (submit)="onSubmit(userform.value)">
-      <input type="text" name="{{pseudo}}" class="input-lg" placeholder="Pseudonyme"/>
+    <form (ngSubmit)="onSubmit()" #login-form=ngform>
+      <input type="text" name="pseudo" class="input-lg" placeholder="Pseudonyme"/>
       <input type="submit" class="btn-primary" value="Connexion"/>
     </form>
   </div>

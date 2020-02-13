@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { AuthService } from '../@shared/auth.service'
 
 @Component({
   selector: 'login',
@@ -6,9 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  @Input() pseudo:String;
-
-  onSubmit(value:any){
-    console.log();
-  }
+   constructor(
+    public pseudo:string
+  ) {  }  
 }
