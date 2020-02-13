@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginformComponent } from './loginform/loginform.component';
-import { AuthService } from './@shared/auth.service';
 import { User } from './models/user/user.component';
 import { UserServiceService } from './@shared/user-service.service';
 
@@ -13,6 +12,6 @@ import { UserServiceService } from './@shared/user-service.service';
   imports:      [ BrowserModule, FormsModule, NgbModule ],
   declarations: [ AppComponent, LoginformComponent, User ],
   bootstrap:    [ AppComponent ],
-  providers: [AuthService, UserServiceService]
+  providers: [UserServiceService]
 })
 export class AppModule { }
