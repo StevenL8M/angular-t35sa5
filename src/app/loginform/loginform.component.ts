@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./loginform.component.css']
 })
 export class LoginformComponent implements OnInit {
+  login:string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(){
+    
   }
 
 }

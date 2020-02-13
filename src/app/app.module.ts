@@ -6,10 +6,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LoginformComponent } from './loginform/loginform.component';
 import { AuthService } from './@shared/auth.service';
+import { User } from './models/user/user.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NgbModule ],
-  declarations: [ AppComponent, LoginformComponent ],
+  declarations: [ AppComponent, LoginformComponent, User ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService]
 })

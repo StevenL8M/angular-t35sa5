@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { User } from '../models/user/user.component';
 
 @Injectable()
 export class AuthService {
@@ -14,8 +15,4 @@ export class AuthService {
     return this.user;
   }
 
-}
-
-export class User {
-  login : string;
 }
