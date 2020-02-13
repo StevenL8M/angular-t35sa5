@@ -8,3 +8,10 @@ div#zoneLogin{
   position: absolute;
   top:50%;
 }
+
+div input{
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}

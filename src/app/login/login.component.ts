@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class LoginComponent {
   @Input() pseudo:String;
 
-  onSubmit(){
-    console.log("test");
+  onSubmit(value:any){
+    console.log();
   }
 }

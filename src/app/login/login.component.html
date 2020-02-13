@@ -5,9 +5,9 @@
 </div>
  
   <div class="input-group" id="zoneLogin">
-    <form (submit)="onSubmit()">
+    <form #userForm (submit)="onSubmit(userform.value)">
       <input type="text" name="{{pseudo}}" class="input-lg" placeholder="Pseudonyme"/>
-      <input type="submit" class="btn btn-primary"value="Connexion"/>
+      <input type="submit" class="btn-primary" value="Connexion"/>
     </form>
   </div>
 
