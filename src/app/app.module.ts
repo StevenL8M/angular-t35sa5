@@ -5,12 +5,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { LoginFormComponent } from './loginform/loginform.component';
+import { LoginformComponent } from './loginform/loginform.component';
 import { AuthService } from './@shared/auth.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NgbModule ],
-  declarations: [ AppComponent, LoginComponent, LoginFormComponent ],
+  declarations: [ AppComponent, LoginComponent, LoginformComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService]
 })
