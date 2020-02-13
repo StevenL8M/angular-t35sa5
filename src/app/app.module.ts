@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { LoginFormComponent } from './login-form/login-form.component';
+import { LoginFormComponent } from './loginform/loginform.component';
 import { AuthService } from './@shared/auth.service';
 
 @NgModule({
