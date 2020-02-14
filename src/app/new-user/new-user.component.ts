@@ -29,7 +29,7 @@ export class NewUserComponent implements OnInit {
     const newUser = new User(
       formValue['pseudo']
     );
-    this.userService.addUser(newUser);
+    this.userService.setUser(newUser);
   }
 
 }
