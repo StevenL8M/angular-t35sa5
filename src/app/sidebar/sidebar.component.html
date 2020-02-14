@@ -1,8 +1,13 @@
 
 
 <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
+  <div id="userDiv" class="rounded border border-warning">
+    <p id="pseudoUser">
+        Bonjour {{user.pseudo}}, <br/>quelle est votre idée aujourd'hui ?
+    </p>
+  </div>
+
+  <div class="md-form">
+  <textarea id="idee" class="md-textarea form-control" rows="3"></textarea>
+</div>
 </div>
