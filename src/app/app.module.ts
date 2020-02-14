@@ -10,10 +10,15 @@ import { User } from './models/user/user.component';
 import { UserServiceService } from './@shared/user-service.service';
 import { NewUserComponent } from './new-user/new-user.component';
 import { RouterModule, Routes } from '@angular/router';
+import { BoiteComponent } from './boite/boite.component';
+
+const appRoutes : Routes = [{
+  path: 'boite', component
+}]
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, NgbModule, ReactiveFormsModule ],
-  declarations: [ AppComponent, LoginformComponent, User, NewUserComponent ],
+  imports:      [ BrowserModule, FormsModule, NgbModule, ReactiveFormsModule, RouterModule.forRoot(appRoutes)],
+  declarations: [ AppComponent, LoginformComponent, User, NewUserComponent, BoiteComponent ],
   bootstrap:    [ AppComponent ],
   providers: [UserServiceService]
 })
