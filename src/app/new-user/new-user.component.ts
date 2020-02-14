@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { UserServiceService } from '../@shared/user-service.service';
 
 @Component({
   selector: 'app-new-user',
