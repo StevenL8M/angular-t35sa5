@@ -9,6 +9,7 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { User } from './models/user/user.component';
 import { UserServiceService } from './@shared/user-service.service';
 import { NewUserComponent } from './new-user/new-user.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NgbModule, ReactiveFormsModule ],

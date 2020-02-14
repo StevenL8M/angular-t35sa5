@@ -12,6 +12,7 @@ export class LoginformComponent implements OnInit {
   constructor(private userService: UserServiceService) { }
 
   ngOnInit() {
+    console.log(UserServiceService.user);
   }
 
   onSubmit(){

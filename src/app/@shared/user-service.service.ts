@@ -9,9 +9,7 @@ export class UserServiceService {
   setUser(user: User){
     this.user=user;
     console.log(this.user);
-    while(true){
-
-    }
+    
   }
 
 
