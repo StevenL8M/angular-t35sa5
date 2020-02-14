@@ -8,20 +8,15 @@ import { User } from '../models/user';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-
+  user: User;
   constructor(
     private userService : UserServiceService,
   ) { }
 
   ngOnInit() {
+    this.user = this.userService.getUser();
   }
 
-w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
 
-w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
 
 }
