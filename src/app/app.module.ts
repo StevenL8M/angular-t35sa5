@@ -9,6 +9,7 @@ import { UserServiceService } from './@shared/user-service.service';
 import { NewUserComponent } from './new-user/new-user.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BoiteComponent } from './boite/boite.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const appRoutes : Routes = [
   { path: 'boite', component:BoiteComponent },
@@ -19,7 +20,7 @@ const appRoutes : Routes = [
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NgbModule, ReactiveFormsModule, RouterModule.forRoot(appRoutes)],
-  declarations: [ AppComponent, NewUserComponent, BoiteComponent ],
+  declarations: [ AppComponent, NewUserComponent, BoiteComponent, SidebarComponent ],
   bootstrap:    [ AppComponent ],
   providers: [UserServiceService]
 })
