@@ -12,9 +12,12 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BoiteComponent } from './boite/boite.component';
 
-const appRoutes : Routes = [{
-  path: 'boite', component
-}]
+const appRoutes : Routes = [
+  { path: 'boite', component:BoiteComponent },
+  { path: 'connexion', component:NewUserComponent },
+  { path: '', component:NewUserComponent }
+  
+  ]
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NgbModule, ReactiveFormsModule, RouterModule.forRoot(appRoutes)],

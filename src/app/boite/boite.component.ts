@@ -10,6 +10,7 @@ export class BoiteComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

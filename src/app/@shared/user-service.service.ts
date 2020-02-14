@@ -3,13 +3,20 @@ import { User } from '../models/user/user.component'
 
 @Injectable()
 export class UserServiceService {
-  user : User;
+  
+
+
+  static user : User;
   constructor() { }
 
-  setUser(user: User){
-    this.user=user;
-    console.log(this.user);
+  setUser(user1: User){
+    UserServiceService.user=user1;
+    console.log(UserServiceService.getUser());
     
+  }
+
+  static getUser(){
+    return UserServiceService.user;
   }
 
 
