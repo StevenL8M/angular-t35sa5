@@ -7,10 +7,11 @@ import { AppComponent } from './app.component';
 import { LoginformComponent } from './loginform/loginform.component';
 import { User } from './models/user/user.component';
 import { UserServiceService } from './@shared/user-service.service';
+import { NewUserComponent } from './new-user/new-user.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, NgbModule ],
-  declarations: [ AppComponent, LoginformComponent, User ],
+  declarations: [ AppComponent, LoginformComponent, User, NewUserComponent ],
   bootstrap:    [ AppComponent ],
   providers: [UserServiceService]
 })

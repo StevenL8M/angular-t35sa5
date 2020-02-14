@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserServiceService } from '../@shared/user-service';
+import { UserServiceService } from '../@shared/user-service.service';
 
 @Component({
   selector: 'app-loginform',
