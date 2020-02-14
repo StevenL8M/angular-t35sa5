@@ -9,7 +9,6 @@ export class UserServiceService {
 
   setUser(pseudo: string){
     this.user= { pseudo: pseudo };
-    console.log("console  > ", this.user)
   }
 
   getUser(){
