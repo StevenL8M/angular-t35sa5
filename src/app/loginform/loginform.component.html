@@ -5,7 +5,7 @@
 </div>
  
   <div class="input-group" id="zoneLogin">
-    <form (ngSubmit)="onSubmit()" #loginform="ngForm">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmitForm()">
       <input type="text" name="pseudo" class="input-lg" placeholder="Pseudonyme"/>
       <input type="submit" class="btn-primary" value="Connexion"/>
     </form>

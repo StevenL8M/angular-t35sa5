@@ -18,7 +18,7 @@ export class NewUserComponent implements OnInit {
 
   initForm() {
     this.userForm = this.formBuilder.group({
-      login:''
+      pseudo:''
     });
 }
 
