@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class User implements OnInit {
-public pseudo: string
+
   constructor(
-    
+    public pseudo: string
   ) { }
 
   ngOnInit() {

@@ -6,17 +6,17 @@ export class UserServiceService {
   
 
 
-  static user : User;
+  public user : User;
   constructor() { }
 
   setUser(user1: User){
-    UserServiceService.user=user1;
-    console.log(UserServiceService.getUser());
+    this.user=user1;
+    console.log(this.getUser());
     
   }
 
-  static getUser(){
-    return UserServiceService.user;
+  getUser(){
+    return this.user;
   }
 
 
