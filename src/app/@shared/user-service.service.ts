@@ -12,4 +12,9 @@ export class UserServiceService {
     setTimeout(() => {  console.log("World!"); }, 2000);
   }
 
+  private delay(ms: number)
+{
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 }
