@@ -9,10 +9,10 @@ import {User} from '../models/user/user.component';
 })
 export class BoiteComponent implements OnInit {
   
-  constructor() { }
+  constructor( private userService: UserServiceService) { }
 
   ngOnInit() {
-    console.log(<User>UserServiceService.getUser());
+    console.log(this.userService.getUser());
   }
 
 }

@@ -1,18 +1,15 @@
 import { Injectable } from '@angular/core';
-import { User } from '../models/user/user.component'
+import { User } from '../models/user'
 
 @Injectable()
 export class UserServiceService {
-  
+  user : User;
 
-
-  public user : User;
   constructor() { }
 
-  setUser(user1: User){
-    this.user=user1;
-    console.log(this.getUser());
-    
+  setUser(pseudo: string){
+    this.user= { pseudo: pseudo };
+    console.log("console  > ", this.user)
   }
 
   getUser(){

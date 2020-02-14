@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { UserServiceService } from '../@shared/user-service.service';
-import { User } from '../models/user/user.component';
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-new-user',
@@ -26,9 +26,7 @@ export class NewUserComponent implements OnInit {
 
   onSubmitForm() {
     const formValue = this.userForm.value;
-    const newUser = new User(
-      formValue['pseudo']
-    );
+    const newUser = formValue['pseudo'];
     this.userService.setUser(newUser);
   }
 
