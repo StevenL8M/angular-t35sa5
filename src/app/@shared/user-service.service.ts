@@ -9,12 +9,11 @@ export class UserServiceService {
   setUser(user: User){
     this.user=user;
     console.log(this.user);
-    setTimeout(() => {  console.log("World!"); }, 2000);
+    while(true){
+
+    }
   }
 
-  private delay(ms: number)
-{
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+
 
 }
