@@ -25,9 +25,9 @@ export class NewUserComponent implements OnInit {
   }
 
   onSubmitForm() {
-    const formValue = this.userForm.value;
-    const newUser = formValue['pseudo'];
-    this.userService.setUser(newUser);
+    const pseudo = this.userForm.value['pseudo'];
+    console.log("pseudo > ", pseudo)
+    this.userService.setUser(pseudo);
   }
 
 }
