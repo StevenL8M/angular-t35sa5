@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserServiceService } from '../@shared/user-service';
 
 @Component({
   selector: 'app-loginform',
@@ -6,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./loginform.component.css']
 })
 export class LoginformComponent implements OnInit {
-  login:string;
+  user: User
 
-  constructor() { }
+  constructor(private userService: UserServiceService) { }
 
   ngOnInit() {
   }

@@ -6,8 +6,8 @@ export class UserServiceService {
   user : User;
   constructor() { }
 
-  onSubmit(){
-    
+  setUser(user: User){
+    this.user=user;
   }
 
 }
