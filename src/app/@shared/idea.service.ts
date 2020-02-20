@@ -16,7 +16,7 @@ export class IdeaService {
   }
 
   getSpecificIdea(index:number){
-    return this.ideas.
+    return this.ideas[index];
   }
 
 }
