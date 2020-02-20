@@ -1,6 +1,6 @@
 .sidenav {
   height: 100%;
-  width: 350px;
+  width: 20%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -8,6 +8,7 @@
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+
 }
 
 .sidenav a {
@@ -42,11 +43,11 @@
   padding-top:2vh;
   text-align: center;
   background-color: #ab47bc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 }
 
+
+
 #btnIdee{
-  
+  margin-left: 10%;
 }
