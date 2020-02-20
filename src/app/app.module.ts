@@ -10,6 +10,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BoiteComponent } from './boite/boite.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { IdeaService } from './@shared/idea.service';
 
 const appRoutes : Routes = [
   { path: 'boite', component:BoiteComponent },
@@ -22,6 +23,6 @@ const appRoutes : Routes = [
   imports:      [ BrowserModule, FormsModule, NgbModule, ReactiveFormsModule, RouterModule.forRoot(appRoutes)],
   declarations: [ AppComponent, NewUserComponent, BoiteComponent, SidebarComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [UserServiceService]
+  providers: [UserServiceService, IdeaService]
 })
 export class AppModule { }

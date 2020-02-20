@@ -1,18 +1,20 @@
 
 
 <div class="sidenav">
-  <div id="container">
-    <div id="userDiv" class="rounded border border-warning">
-      <p id="pseudoUser">
+  <form [formGroup]="ideaForm" (ngSubmit)="onIdeaSubmit()">
+      <div id="userDiv" class="rounded border border-warning">
+        <p id="pseudoUser">
           Bonjour {{user.pseudo}}, <br/>quelle est votre idée aujourd'hui ?
-      </p>
-    </div>
+        </p>
+      </div>
 
-    <div class="md-form">
-      <textarea id="idee" class="md-textarea form-control" rows="3"></textarea>
-      
-      <button id="btnIdee" type="button" class="btn btn-success">Ajouter l'idée</button>
-    </div>
-    
-  </div>
+      <div class="md-form">
+        <textarea id="idee" class="md-textarea form-control" rows="3"></textarea>
+      </div>
+      <div id="container">
+        <input id="btnIdee" type="submit" class="btn btn-success" value="Ajouter"/>
+      </div>
+  </form>
+  
+
 </div>
