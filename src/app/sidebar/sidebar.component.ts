@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserServiceService } from '../@shared/user-service.service';
 import { User } from '../models/user';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,12 +10,28 @@ import { User } from '../models/user';
 })
 export class SidebarComponent implements OnInit {
   user: User;
+  ideaForm:FormGroup;
   constructor(
     private userService : UserServiceService,
+    private formBuilder: FormBuilder,
   ) { }
 
-  ngOnInit() {
+   ngOnInit() {
     this.user = this.userService.getUser();
+    this.initForm();
+  }
+
+  initForm() {
+    this.ideaForm = this.formBuilder.group({
+      contenu:'',
+      auteur:'',
+      voteUp:'',
+      voteDown:''
+    });
+  }
+
+  onIdeaSubmit(){
+
   }
 
 
