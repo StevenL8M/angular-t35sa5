@@ -39,11 +39,14 @@
 
 #userDiv{
   margin:10%;
-  padding-top:2vw;
+  padding-top:2vh;
   text-align: center;
   background-color: #ab47bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#idee{
+#btnIdee{
   
 }
