@@ -1,10 +1,13 @@
 div#principal{
   margin-left: 20%;
-  height:100vh;
   display:grid;
   grid-template-columns: repeat(3,35%);
   grid-template-rows: auto;
-  overflow-y:scroll;
+}
+
+div#tout{
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 p.auteur{
