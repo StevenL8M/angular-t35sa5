@@ -19,7 +19,6 @@ export class ListeIdeasComponent implements OnInit {
     this.idees = this.ideaService.getIdeas();
     let elements=document.querySelectorAll('.btnClose');
     for(let elem in elements){
-      console.log(elem.keys);
     }
     this.user = this.userService.getUser();
   }
