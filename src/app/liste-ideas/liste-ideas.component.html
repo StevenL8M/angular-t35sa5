@@ -2,7 +2,8 @@
   <div id="principal">
     <ng-container *ngFor="let idee of idees">
       <div class="idee">
-        <p>{{idee.contenu}}<p>
+        <p>{{idee.contenu}} <button type="button" class="btn btn-outline-danger mBtn btnS" (click)="down(idee)">😠</button>
+        {{idee.voteDown}}<p>
         <p class="auteur">Par : <b>{{idee.auteur}}</b></p>
         <button type="button" class="btn btn-outline-success btnS" (click)="up(idee)">😄</button>
         {{idee.voteUp}}
