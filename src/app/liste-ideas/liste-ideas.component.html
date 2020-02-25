@@ -8,9 +8,7 @@
         {{idee.voteUp}}
         <button type="button" class="btn btn-outline-danger mBtn btnS" (click)="down(idee)">😠</button>
         {{idee.voteDown}}
-        <div class="progress mProgress"style="height: 5px;">
-  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
+        <mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
       </div>
     </ng-container>
   </div>
