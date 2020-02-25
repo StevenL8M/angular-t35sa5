@@ -12,7 +12,7 @@ export class IdeaService {
   }
 
   addIdea(contenu:string, auteur:string){
-    this.ideas.push({ auteur: auteur, contenu:contenu, voteUp:0, voteDown:0 });
+    this.ideas.push(new Idea(contenu,auteur,0,0));
   }
 
   getSpecificIdea(index:number){

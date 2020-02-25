@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { UserServiceService } from '../@shared/user-service.service';
+import { IdeaService } from '../@shared/idea.service';
+import { Idea } from '../models/idea';
 
 @Component({
   selector: 'liste-ideas',
@@ -6,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./liste-ideas.component.css']
 })
 export class ListeIdeasComponent implements OnInit {
-
-  constructor() { }
+  public idees:Idea[];
+  constructor(private ideaService:IdeaService) {}
 
   ngOnInit() {
+    this.idees = this.ideaService.getIdeas();
   }
 
 }

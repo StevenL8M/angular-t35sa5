@@ -1,6 +1,8 @@
 export class Idea {
-  contenu:string;
-  auteur:string;
-  voteUp:number;
-  voteDown:number;
+  constructor(
+   public contenu:string,
+  public auteur:string,
+  public voteUp:number,
+  public voteDown:number,
+  ){}
 }
