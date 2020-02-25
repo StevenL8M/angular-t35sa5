@@ -17,15 +17,23 @@ export class ListeIdeasComponent implements OnInit {
 
   ngOnInit() {
     this.idees = this.ideaService.getIdeas();
+    let elements=document.querySelectorAll('.btnClose');
+    for(let elem in elements){
+      console.log(elem);
+    }
     this.user = this.userService.getUser();
   }
 
   down(idee:Idea){
-    idee.voteDown++;
+    if(this.user.pseudo != idee.auteur){
+      idee.voteDown++;
+    }
   }
 
   up(idee:Idea){
-    idee.voteUp++;
+    if(this.user.pseudo != idee.auteur){
+      idee.voteUp++;
+    }
   }
 
   delete(idee:Idea){
