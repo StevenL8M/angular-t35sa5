@@ -1,7 +1,7 @@
 div#principal{
-  margin-left: 20%;
+  margin-left: 25%;
   display:grid;
-  grid-template-columns: repeat(3,20vw);
+  grid-template-columns: repeat(3,35%);
   grid-template-rows: auto;
 }
 
@@ -13,7 +13,7 @@ p.auteur{
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
-  width: 200px;
-  height: 150px;
+  width: 20vw;
+  height: auto;
   margin:20px
 }
