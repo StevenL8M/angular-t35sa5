@@ -22,7 +22,6 @@ export class SidebarComponent implements OnInit {
 
    ngOnInit() {
     this.user = this.userService.getUser();
-    console.log(this.user)
     this.initForm();
   }
 
@@ -36,7 +35,6 @@ export class SidebarComponent implements OnInit {
     let contenu:string = this.ideaForm.value['idee'];
     let pseudo:string = this.user.pseudo;
     this.ideaService.addIdea(new Idea(contenu,pseudo,0,0));
-    console.log(contenu +" "+pseudo);
   }
 
 
