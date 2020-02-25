@@ -14,6 +14,14 @@ p.auteur{
   margin-top:auto;
 }
 
+.mBtn{
+  margin-left:10px;
+}
+
+.btnS{
+  width:"10%";
+}
+
 .idee {
   border-radius: 25px;
   border: 2px solid #000000;
