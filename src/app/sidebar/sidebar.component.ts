@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserServiceService } from '../@shared/user-service.service';
+import { IdeaService } from '../@shared/idea.service';
 import { User } from '../models/user';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
@@ -13,6 +14,7 @@ export class SidebarComponent implements OnInit {
   ideaForm:FormGroup;
   constructor(
     private userService : UserServiceService,
+    private ideaService : IdeaService,
     private formBuilder: FormBuilder,
   ) { }
 
@@ -31,7 +33,9 @@ export class SidebarComponent implements OnInit {
   }
 
   onIdeaSubmit(){
-
+    const contenu = this.ideaForm.value['idee'];
+    const pseudo = this.user.pseudo;
+    this.ideaService.addIdea(contenu, pseudo);
   }
 
 
