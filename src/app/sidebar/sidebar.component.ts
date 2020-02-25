@@ -34,8 +34,7 @@ export class SidebarComponent implements OnInit {
 
   onIdeaSubmit(){
     const contenu = this.ideaForm.value['idee'];
-    const pseudo = this.userService.getUser();
-    this.ideaService.addIdea(contenu, pseudo);
+    var pseudo = this.userService.getUser().getPseudo();
     console.log(contenu );
   }
 
