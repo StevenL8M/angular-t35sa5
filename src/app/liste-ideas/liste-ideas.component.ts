@@ -16,4 +16,12 @@ export class ListeIdeasComponent implements OnInit {
     this.idees = this.ideaService.getIdeas();
   }
 
+  down(idee:Idea){
+    idee.voteDown++;
+  }
+
+  up(idee:Idea){
+    idee.voteUp++;
+  }
+
 }
