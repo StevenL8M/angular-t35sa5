@@ -1,5 +1,10 @@
 <div id="principal">
   <ng-container *ngFor="let idee of idees">
-    <p>{{idee.contenu}}</p>
+    <div class="idee">
+      <p>{{idee.contenu}}<p>
+      <br/>
+      <br/>
+      <p>Par : <b>{{idee.auteur}}</b></p>
+    </div>
   </ng-container>
 </div>

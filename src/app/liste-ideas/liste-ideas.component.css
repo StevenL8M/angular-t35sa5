@@ -1,3 +1,13 @@
 div#principal{
   margin-left: 20%;
 }
+
+.idee {
+  display: inline-block;
+  border-radius: 25px;
+  border: 2px solid #000000;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  margin:20px
+}

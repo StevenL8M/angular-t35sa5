@@ -3,7 +3,7 @@ import { Idea } from '../models/idea'
 
 @Injectable()
 export class IdeaService {
-  ideas : Array<Idea>;
+  ideas : Array<Idea>=[];
 
   constructor() { }
 
