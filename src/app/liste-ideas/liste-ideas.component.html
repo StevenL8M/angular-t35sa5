@@ -4,8 +4,10 @@
       <div class="idee">
         <p>{{idee.contenu}}<p>
         <p class="auteur">Par : <b>{{idee.auteur}}</b></p>
-        <button type="button" class="btn btn-outline-success btnS">😄</button>
-        <button type="button" class="btn btn-outline-danger mBtn btnS">😠</button>
+        <button type="button" class="btn btn-outline-success btnS" (click)="up(idee)">😄</button>
+        {{idee.voteUp}}
+        <button type="button" class="btn btn-outline-danger mBtn btnS" (click)="up(idee)">😠</button>
+        {{idee.voteDown}}
       </div>
     </ng-container>
   </div>
