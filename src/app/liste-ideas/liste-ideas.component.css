@@ -5,6 +5,10 @@ div#principal{
   grid-template-rows: auto;
 }
 
+.mProgress{
+  margin-top: 5px;
+}
+
 div#tout{
   height: 100vh;
   overflow-y: scroll;
