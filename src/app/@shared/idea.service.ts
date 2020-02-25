@@ -11,8 +11,8 @@ export class IdeaService {
     return this.ideas;
   }
 
-  addIdea(contenu:string, auteur:string){
-    this.ideas.push(new Idea(contenu,auteur,0,0));
+  addIdea(idee:Idea){
+    this.ideas.push(idee);
   }
 
   getSpecificIdea(index:number){
