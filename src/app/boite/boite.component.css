@@ -1,7 +1,3 @@
-div {
-  display:inline
-}
-
-list-ideas{
-  font-size: 500px;
+#principal div.element{
+  display: inline;
 }
