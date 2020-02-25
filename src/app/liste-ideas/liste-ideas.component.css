@@ -1,9 +1,15 @@
 div#principal{
   margin-left: 20%;
+  display:grid;
+  grid-template-columns: repeat(3,20vw);
+  grid-template-rows: auto;
+}
+
+p.auteur{
+  margin-top:auto;
 }
 
 .idee {
-  display: inline-block;
   border-radius: 25px;
   border: 2px solid #000000;
   padding: 20px;
