@@ -12,6 +12,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class SidebarComponent implements OnInit {
   user: User;
   ideaForm:FormGroup;
+
   constructor(
     private userService : UserServiceService,
     private ideaService : IdeaService,
@@ -20,22 +21,20 @@ export class SidebarComponent implements OnInit {
 
    ngOnInit() {
     this.user = this.userService.getUser();
+    console.log(this.user)
     this.initForm();
   }
 
   initForm() {
     this.ideaForm = this.formBuilder.group({
-      contenu:'',
-      auteur:'',
-      voteUp:'',
-      voteDown:''
+      idee:''
     });
   }
 
   onIdeaSubmit(){
-    const contenu = this.ideaForm.value['idee'];
-    var pseudo = this.userService.getUser().getPseudo();
-    console.log(contenu );
+    let contenu:string = this.ideaForm.value['idee'];
+    let pseudo:string = this.user.pseudo;
+    console.log(contenu +" "+pseudo);
   }
 
 

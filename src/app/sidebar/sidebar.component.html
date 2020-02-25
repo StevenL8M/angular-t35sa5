@@ -4,7 +4,7 @@
   <form [formGroup]="ideaForm" (ngSubmit)="onIdeaSubmit()">
       <div id="userDiv" class="rounded border border-warning">
         <p id="pseudoUser">
-          Bonjour {{user.pseudo}}, <br/>quelle est votre idée aujourd'hui ?
+          Bonjour {{user?.pseudo}}, <br/>quelle est votre idée aujourd'hui ?
         </p>
       </div>
 
