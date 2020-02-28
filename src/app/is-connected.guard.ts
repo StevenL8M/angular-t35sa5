@@ -4,12 +4,18 @@ import { Observable } from 'rxjs';
 import { UserServiceService } from './@shared/user-service.service';
 import { User } from './models/user';
 
-@Injectable()
+
+
+@Injectable({
+    providedIn: 'root'
+})
 export class IsConnectedGuard implements CanActivate {
-  private serviceUser:UserServiceService;
+  constructor(private serviceUser:UserServiceService){
+
+  }
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    return this.serviceUser.getUser().pseudo!=null;
+    return (this.serviceUser.getUser().pseudo.trim()!="") and (this.serviceUser.getUser()!=null);
   }
 }
