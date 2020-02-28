@@ -12,6 +12,7 @@ import { BoiteComponent } from './boite/boite.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { IdeaService } from './@shared/idea.service';
 import { ListeIdeasComponent } from './liste-ideas/liste-ideas.component';
+import { IsConnectedGuard } from './is-connected.guard';
 
 const appRoutes : Routes = [
   { path: 'boite', component:BoiteComponent, 
