@@ -1,7 +1,7 @@
 <div id="tout">
   <div id="principal">
     <ng-container *ngFor="let idee of idees">
-      <div class="idee" ng-if="idee.auteur == this.user.pseudo">
+      <div class="idee" *ngIf="idee.pseudo==this.userService.getUser().pseudo">
         <p>{{idee.contenu}} <button type="button" class="btn btn-outline-danger mBtn btnS btnClose"  style="float:right;"  (click)="delete(idee)">x</button><p>
         <p class="auteur">Par : <b>{{idee.auteur}}</b></p>
         <button type="button" class="btn btn-outline-success btnS" (click)="up(idee)">😄</button>
@@ -10,7 +10,7 @@
         {{idee.voteDown}}
       </div>
 
-      <div class="idee" ng-if="idee.auteur != this.user.pseudo" style="background-color='#000000';">
+      <div class="idee" *ngIf="idee.pseudo!=this.user.pseudo">
         <p>{{idee.contenu}} <button type="button" class="btn btn-outline-danger mBtn btnS btnClose"  style="float:right;"  (click)="delete(idee)">x</button><p>
         <p class="auteur">Par : <b>{{idee.auteur}}</b></p>
         <button type="button" class="btn btn-outline-success btnS" (click)="up(idee)">😄</button>
