@@ -14,7 +14,12 @@ import { IdeaService } from './@shared/idea.service';
 import { ListeIdeasComponent } from './liste-ideas/liste-ideas.component';
 
 const appRoutes : Routes = [
-  { path: 'boite', component:BoiteComponent },
+  { path: 'boite', component:BoiteComponent, 
+  canActivate: [
+            IsConnected
+        ] 
+  },
+
   { path: 'connexion', component:NewUserComponent },
   { path: '', component:NewUserComponent }
   
