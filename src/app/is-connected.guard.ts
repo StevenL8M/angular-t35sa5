@@ -6,10 +6,10 @@ import { User } from 'models/user';
 
 @Injectable()
 export class IsConnectedGuard implements CanActivate {
-  
+  serviceUser:UserServiceService;
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    return true;
+    return serviceUser;
   }
 }

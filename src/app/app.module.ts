@@ -16,7 +16,7 @@ import { ListeIdeasComponent } from './liste-ideas/liste-ideas.component';
 const appRoutes : Routes = [
   { path: 'boite', component:BoiteComponent, 
   canActivate: [
-            IsConnected
+            IsConnectedGuard
         ] 
   },
 
