@@ -32,12 +32,12 @@ p.auteur{
   width: 20vw;
   height: auto;
   margin:20px;
-  background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,222,0,1) 70%, rgba(255,196,0,1) 100%);
+  background: linear-gradient(to right, #70e1f5, #ffd194);
   border:0px;
 }
 
 .idee.me {
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 70%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(to right, #649173, #dbd5a4);
 }
 
 #tout{
