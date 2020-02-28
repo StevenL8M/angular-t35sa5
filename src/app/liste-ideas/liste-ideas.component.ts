@@ -42,7 +42,7 @@ export class ListeIdeasComponent implements OnInit {
     }
   }
 
-  check(idee:Idea){
+  isMe(idee:Idea){
     return (idee.auteur==this.user.pseudo);
   }
 
