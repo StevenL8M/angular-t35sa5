@@ -35,7 +35,9 @@ p.auteur{
   margin:20px;
 }
 
-body{
-  background: url("https://static.vecteezy.com/system/resources/previews/000/125/827/non_2x/green-chalkboard-vector-texture.jpg");
+#tout{
+   background: url("https://c.pxhere.com/photos/8a/81/blackboard_chalkboard_background_chalk_texture_black-916800.jpg!d");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
