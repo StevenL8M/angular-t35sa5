@@ -32,6 +32,7 @@ p.auteur{
   padding: 20px;
   width: 20vw;
   height: auto;
-  margin:20px
+  margin:20px;
+  display:relative;
 }
 
