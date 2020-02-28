@@ -16,6 +16,11 @@ export class IsConnectedGuard implements CanActivate {
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-    return (this.serviceUser.getUser().pseudo.trim()!="") and (this.serviceUser.getUser()!=null);
-  }
+      if(this.serviceUser.getUser()!=null){
+          return this.serviceUser.getUser().pseudo.trim()!="";
+      }
+      else{
+        return false;
+       }
+     }
 }
